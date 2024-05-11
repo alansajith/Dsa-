@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+<<<<<<< HEAD
+int main(){
+    cout<<"hi";
+    
+=======
 // count no . of digits
 //  int main()
 //  {
@@ -28,4 +33,5 @@ int main()
         n = n / 10;
     }
     cout << rev_num;
+>>>>>>> 9d903127d9de39aefd394ca70d5d09562f3931bb
 }

@@ -18,6 +18,10 @@ int main()
     {
         mpp[arr[i]]++;
     }
+    for (auto it : mpp)
+    {
+        cout << it.first << "->" << it.second << endl;
+    }
 
     int q;
     cout << "how many queries do u want to take: ";

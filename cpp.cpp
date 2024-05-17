@@ -1,40 +1,31 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-// count no . of digits
-//  int main()
-//  {
-//      int count = 0;
-//      int n = 3456;
-//      while (n > 0)
-//      {
-//          count += 1;
-//          n = n / 10;
-//      }
-//      cout << count;
-//  }
+int main()
+{
+    int n;
+    int arr[n];
+    cout << "enter how many numbers you want to insert: ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-// reverse a number and check if its a palindrome
-// int main()
-// {
-//     int n;
-//     cout << "enter a number: ";
-//     cin >> n;
-//     int a = n;
-//     int rev_num = 0;
-//     while (n > 0)
-//     {
-//         int ld = n % 10;
-//         rev_num = (rev_num * 10) + ld;
-//         n = n / 10;
-//     }
-//     cout << rev_num << endl;
-//     if (rev_num == a)
-//     {
-//         cout << "its a palindrome";
-//     }
-//     else
-//     {
-//         cout << "its not a palindrome";
-//     }
-// }
+    map<int, int> mpp;
+    for (int i = 0; i < n; i++)
+    {
+        mpp[arr[i]]++;
+    }
+
+    int q;
+    cout << "how many queries do u want to take: ";
+    cin >> q;
+    while (q--)
+    {
+        int number;
+        cin >> number;
+        cout << mpp[number] << " ";
+    }
+}
